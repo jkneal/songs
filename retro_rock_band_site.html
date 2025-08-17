@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Collective</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.1;
+        }
+        
+        .sound-waves {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(90deg, transparent 0%, #00d4ff 50%, transparent 100%),
+                linear-gradient(0deg, transparent 0%, #00d4ff 50%, transparent 100%);
+            background-size: 200px 1px, 1px 200px;
+            animation: waveMove 20s linear infinite;
+        }
+        
+        @keyframes waveMove {
+            0% { transform: translateX(-200px) translateY(-200px); }
+            100% { transform: translateX(200px) translateY(200px); }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            font-size: clamp(3rem, 8vw, 4.5rem);
+            font-weight: 300;
+            letter-spacing: -2px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .playlist-section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            width: 100%;
+        }
+        
+        .playlist {
+            list-style: none;
+        }
+        
+        .track {
+            display: grid;
+            grid-template-columns: 40px 50px 1fr auto auto;
+            gap: 20px;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .track:last-child {
+            border-bottom: none;
+        }
+        
+        .track:hover {
+            background: rgba(255, 255, 255, 0.02);
+            padding-left: 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+        
+        .track.playing {
+            background: rgba(0, 212, 255, 0.05);
+            padding-left: 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+        
+        .track-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+        
+        .play-button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        
+        .play-button:hover {
+            border-color: #00d4ff;
+            background: rgba(0, 212, 255, 0.1);
+            transform: scale(1.05);
+        }
+        
+        .track.playing .play-button {
+            background: #00d4ff;
+            border-color: #00d4ff;
+            color: #000000;
+        }
+        
+        .track-info {
+            min-width: 0;
+        }
+        
+        .track-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .track-duration {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .wave-indicator {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: end;
+            gap: 2px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .track.playing .wave-indicator {
+            opacity: 1;
+        }
+        
+        .wave-bar {
+            width: 3px;
+            background: #00d4ff;
+            border-radius: 1px;
+            animation: waveAnimation 1s ease-in-out infinite;
+        }
+        
+        .wave-bar:nth-child(1) { height: 8px; animation-delay: 0s; }
+        .wave-bar:nth-child(2) { height: 12px; animation-delay: 0.2s; }
+        .wave-bar:nth-child(3) { height: 6px; animation-delay: 0.4s; }
+        .wave-bar:nth-child(4) { height: 10px; animation-delay: 0.6s; }
+        
+        @keyframes waveAnimation {
+            0%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(1.5); }
+        }
+        
+        .player-controls {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .now-playing {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .now-playing-text {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        
+        .control-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .control-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .control-btn:hover {
+            border-color: #00d4ff;
+            background: rgba(0, 212, 255, 0.1);
+        }
+        
+        .control-btn.primary {
+            width: 52px;
+            height: 52px;
+            background: #00d4ff;
+            border-color: #00d4ff;
+            color: #000000;
+            font-size: 1.3rem;
+        }
+        
+        .control-btn.primary:hover {
+            background: #00b8e6;
+            border-color: #00b8e6;
+        }
+        
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .time {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            min-width: 35px;
+        }
+        
+        .progress-bar {
+            flex: 1;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #0099cc);
+            width: 35%;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .playlist-section {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .track {
+                grid-template-columns: 50px 1fr auto;
+                gap: 15px;
+            }
+            
+            .track-number {
+                display: none;
+            }
+            
+            .wave-indicator {
+                display: none;
+            }
+            
+            .control-buttons {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay">
+        <div class="sound-waves"></div>
+    </div>
+    
+    <header class="header">
+        <h1 class="logo">Unnamed</h1>
+        <p class="tagline">Artificial Intelligence • Music Production</p>
+    </header>
+    
+    <section class="playlist-section">
+        <ul class="playlist">
+            <li class="track playing" data-track="1">
+                <span class="track-number">01</span>
+                <button class="play-button">⏸</button>
+                <div class="track-info">
+                    <div class="track-title">Neural Pathways</div>
+                </div>
+                <span class="track-duration">4:23</span>
+                <div class="wave-indicator">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </li>
+            <li class="track" data-track="2">
+                <span class="track-number">02</span>
+                <button class="play-button">▶</button>
+                <div class="track-info">
+                    <div class="track-title">Synthetic Emotion</div>
+                </div>
+                <span class="track-duration">3:45</span>
+                <div class="wave-indicator">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </li>
+            <li class="track" data-track="3">
+                <span class="track-number">03</span>
+                <button class="play-button">▶</button>
+                <div class="track-info">
+                    <div class="track-title">Digital Renaissance</div>
+                </div>
+                <span class="track-duration">5:12</span>
+                <div class="wave-indicator">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </li>
+            <li class="track" data-track="4">
+                <span class="track-number">04</span>
+                <button class="play-button">▶</button>
+                <div class="track-info">
+                    <div class="track-title">Algorithmic Dreams</div>
+                </div>
+                <span class="track-duration">4:01</span>
+                <div class="wave-indicator">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </li>
+            <li class="track" data-track="5">
+                <span class="track-number">05</span>
+                <button class="play-button">▶</button>
+                <div class="track-info">
+                    <div class="track-title">Machine Learning Blues</div>
+                </div>
+                <span class="track-duration">6:33</span>
+                <div class="wave-indicator">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="player-controls">
+            <div class="now-playing">
+                <div class="wave-indicator">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+                <span class="now-playing-text">Neural Pathways</span>
+            </div>
+            
+            <div class="control-buttons">
+                <button class="control-btn">⏮</button>
+                <button class="control-btn primary">⏸</button>
+                <button class="control-btn">⏭</button>
+            </div>
+            
+            <div class="progress-container">
+                <span class="time">1:32</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="time">4:23</span>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Playlist functionality
+        const tracks = document.querySelectorAll('.track');
+        const playButtons = document.querySelectorAll('.play-button');
+        const nowPlayingText = document.querySelector('.now-playing-text');
+        const progress = document.querySelector('.progress');
+        const primaryControlBtn = document.querySelector('.control-btn.primary');
+        const timeDisplay = document.querySelector('.time');
+        
+        let currentTrack = 0;
+        let isPlaying = true;
+        
+        const trackNames = [
+            'Neural Pathways',
+            'Synthetic Emotion',
+            'Digital Renaissance',
+            'Algorithmic Dreams',
+            'Machine Learning Blues'
+        ];
+        
+        tracks.forEach((track, index) => {
+            track.addEventListener('click', () => {
+                tracks.forEach(t => t.classList.remove('playing'));
+                track.classList.add('playing');
+                
+                currentTrack = index;
+                nowPlayingText.textContent = trackNames[index];
+                
+                playButtons.forEach(btn => btn.textContent = '▶');
+                track.querySelector('.play-button').textContent = '⏸';
+                primaryControlBtn.textContent = '⏸';
+                isPlaying = true;
+            });
+        });
+        
+        // Control buttons
+        const controlButtons = document.querySelectorAll('.control-btn');
+        controlButtons[0].addEventListener('click', () => {
+            if (currentTrack > 0) {
+                currentTrack--;
+                tracks[currentTrack].click();
+            }
+        });
+        
+        controlButtons[1].addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            const currentBtn = tracks[currentTrack].querySelector('.play-button');
+            currentBtn.textContent = isPlaying ? '⏸' : '▶';
+            controlButtons[1].textContent = isPlaying ? '⏸' : '▶';
+        });
+        
+        controlButtons[2].addEventListener('click', () => {
+            if (currentTrack < tracks.length - 1) {
+                currentTrack++;
+                tracks[currentTrack].click();
+            }
+        });
+        
+        // Simulate progress
+        let currentTime = 92; // 1:32
+        setInterval(() => {
+            if (isPlaying) {
+                currentTime++;
+                const minutes = Math.floor(currentTime / 60);
+                const seconds = currentTime % 60;
+                timeDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                
+                const duration = 263; // 4:23
+                const progressPercent = (currentTime / duration) * 100;
+                progress.style.width = progressPercent + '%';
+                
+                if (currentTime >= duration) {
+                    currentTime = 0;
+                    if (currentTrack < tracks.length - 1) {
+                        currentTrack++;
+                        tracks[currentTrack].click();
+                    }
+                }
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
