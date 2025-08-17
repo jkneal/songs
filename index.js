@@ -162,6 +162,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.songConfig && window.songConfig.tracks) {
         initializePlaylist();
         initializeControls();
+        
+        // Add spacebar play/pause functionality
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                if (isPlaying) {
+                    pauseTrack();
+                } else {
+                    playTrack();
+                }
+            }
+        });
     } else {
         console.error('Song configuration not found. Please ensure config.js is loaded.');
     }
