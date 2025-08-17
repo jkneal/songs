@@ -34,6 +34,16 @@ window.songConfig = {
             title: "Wildflower Roads",
             file: "music/WildflowerRoads.mp3",
             duration: "3:41"
+        },
+        {
+            title: "Whispers (the jam)",
+            file: "music/Whispers.mp3",
+            duration: "3:49"
+        },
+        {
+            title: "Songs In The Sidewalk",
+            file: "music/SongsInTheSidewalk.mp3",
+            duration: "4:18"
         }
     ]
 };
