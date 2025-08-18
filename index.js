@@ -22,6 +22,7 @@ function createTrackElement(track, index) {
         <div class="track-info">
             <div class="track-title">${track.title}</div>
         </div>
+        ${track.lyrics ? `<button class="lyrics-button" data-track-index="${index}" title="View lyrics">📄</button>` : '<span class="lyrics-spacer"></span>'}
         <span class="track-duration">${track.duration}</span>
         <div class="wave-indicator">
             <div class="wave-bar"></div>
@@ -31,7 +32,19 @@ function createTrackElement(track, index) {
         </div>
     `;
     
-    li.addEventListener('click', () => selectTrack(index));
+    li.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('lyrics-button')) {
+            selectTrack(index);
+        }
+    });
+    
+    const lyricsButton = li.querySelector('.lyrics-button');
+    if (lyricsButton) {
+        lyricsButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showLyrics(index);
+        });
+    }
     
     return li;
 }
@@ -109,11 +122,56 @@ function previousTrack() {
     }
 }
 
+function showLyrics(trackIndex) {
+    const track = tracks[trackIndex];
+    const lyricsPanel = document.getElementById('lyrics-panel');
+    const lyricsContent = document.getElementById('lyrics-content');
+    const lyricsTitle = document.querySelector('.lyrics-title');
+    const mainContainer = document.querySelector('.main-container');
+    
+    if (track.lyrics) {
+        lyricsTitle.textContent = `${track.title} - Lyrics`;
+        
+        // Keywords to highlight
+        const structureKeywords = /^(Verse|Chorus|Bridge|Pre-Chorus|Outro|Intro|Hook|Refrain)(\s+\d+)?$/i;
+        
+        const formattedLyrics = track.lyrics.split('\n').map(line => {
+            if (line.trim()) {
+                // Check if the line matches song structure keywords
+                if (structureKeywords.test(line.trim())) {
+                    return `<p class="lyrics-line lyrics-structure">${line}</p>`;
+                } else {
+                    return `<p class="lyrics-line">${line}</p>`;
+                }
+            } else {
+                return '<p class="lyrics-line">&nbsp;</p>';
+            }
+        }).join('');
+        
+        lyricsContent.innerHTML = formattedLyrics;
+        lyricsPanel.classList.add('active');
+        mainContainer.classList.add('lyrics-open');
+    } else {
+        lyricsTitle.textContent = 'Lyrics';
+        lyricsContent.innerHTML = '<p class="lyrics-placeholder">No lyrics available for this song</p>';
+        lyricsPanel.classList.add('active');
+        mainContainer.classList.add('lyrics-open');
+    }
+}
+
+function hideLyrics() {
+    const lyricsPanel = document.getElementById('lyrics-panel');
+    const mainContainer = document.querySelector('.main-container');
+    lyricsPanel.classList.remove('active');
+    mainContainer.classList.remove('lyrics-open');
+}
+
 function initializeControls() {
     const playPauseBtn = document.getElementById('play-pause-btn');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const progressBar = document.getElementById('progress-bar');
+    const lyricsCloseBtn = document.getElementById('lyrics-close');
     
     playPauseBtn.addEventListener('click', () => {
         if (isPlaying) {
@@ -125,6 +183,7 @@ function initializeControls() {
     
     prevBtn.addEventListener('click', previousTrack);
     nextBtn.addEventListener('click', nextTrack);
+    lyricsCloseBtn.addEventListener('click', hideLyrics);
     
     progressBar.addEventListener('click', (e) => {
         if (audio.duration) {

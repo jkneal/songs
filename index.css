@@ -73,13 +73,27 @@ body {
     text-transform: uppercase;
 }
 
+.main-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    transition: justify-content 0.3s ease;
+}
+
+.main-container.lyrics-open {
+    justify-content: flex-start;
+}
+
 .playlist-section {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 40px;
-    position: relative;
-    z-index: 2;
     max-width: 700px;
     width: 100%;
 }
@@ -113,7 +127,7 @@ body {
 
 .track {
     display: grid;
-    grid-template-columns: 40px 50px 1fr auto auto;
+    grid-template-columns: 40px 50px 1fr 30px auto auto;
     gap: 20px;
     align-items: center;
     padding: 16px 0;
@@ -317,6 +331,154 @@ body {
     transition: width 0.3s ease;
 }
 
+.lyrics-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #00d4ff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    filter: brightness(0.8);
+}
+
+.lyrics-button:hover {
+    border-color: #00d4ff;
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    filter: brightness(1);
+}
+
+.lyrics-spacer {
+    width: 28px;
+}
+
+.lyrics-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    width: 450px;
+    max-height: 630px;
+    display: none;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lyrics-panel.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lyrics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lyrics-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.lyrics-close {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.lyrics-close:hover {
+    border-color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
+    color: #ff4444;
+}
+
+.lyrics-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+.lyrics-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lyrics-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.lyrics-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.lyrics-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 212, 255, 0.4);
+}
+
+.lyrics-line {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+
+.lyrics-line.lyrics-structure {
+    color: #00d4ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.lyrics-line.lyrics-structure:first-child {
+    margin-top: 0;
+}
+
+.lyrics-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .lyrics-panel {
+        width: 100%;
+        max-width: 700px;
+        max-height: 400px;
+    }
+}
+
 @media (max-width: 768px) {
     .playlist-section {
         padding: 30px 20px;
@@ -324,7 +486,7 @@ body {
     }
     
     .track {
-        grid-template-columns: 50px 1fr auto;
+        grid-template-columns: 50px 1fr 30px auto;
         gap: 15px;
     }
     
@@ -338,5 +500,9 @@ body {
     
     .control-buttons {
         gap: 15px;
+    }
+    
+    .lyrics-panel {
+        padding: 20px;
     }
 }
