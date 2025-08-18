@@ -44,6 +44,11 @@ window.songConfig = {
             title: "Songs In The Sidewalk",
             file: "music/SongsInTheSidewalk.mp3",
             duration: "4:18"
+        },
+        {
+            title: "Rest Stops",
+            file: "music/RestStops.mp3",
+            duration: "3:52"
         }
     ]
 };
