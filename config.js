@@ -380,8 +380,8 @@ window.songConfig = {
                 "Chorus \n" +
                 "There are songs in the sidewalk if you stop to hear, \n" +
                 "Tiny symphos hidden near. \n" +
-                "Every heartbeat, every cheer, T\n" +
-                "here are songs in the sidewalk if you stop to hear.\n" +
+                "Every heartbeat, every cheer, \n" +
+                "There are songs in the sidewalk if you stop to hear.\n" +
                 "\n" +
                 "Verse 3\n" +
                 "Raindrops drum on the window glass,\n" +
