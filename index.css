@@ -358,6 +358,28 @@ body {
     width: 28px;
 }
 
+.download-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .lyrics-panel {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -486,7 +508,7 @@ body {
     }
     
     .track {
-        grid-template-columns: 50px 1fr 30px auto;
+        grid-template-columns: 50px 1fr 30px 30px auto;
         gap: 15px;
     }
     
