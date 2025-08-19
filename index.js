@@ -23,6 +23,7 @@ function createTrackElement(track, index) {
             <div class="track-title">${track.title}</div>
         </div>
         ${track.lyrics ? `<button class="lyrics-button" data-track-index="${index}" title="View lyrics">📄</button>` : '<span class="lyrics-spacer"></span>'}
+        <a href="${track.file}" download="${track.title}.mp3" class="download-button" title="Download track" onclick="event.stopPropagation()">⬇</a>
         <span class="track-duration">${track.duration}</span>
         <div class="wave-indicator">
             <div class="wave-bar"></div>
