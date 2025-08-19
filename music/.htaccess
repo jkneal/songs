@@ -1,0 +1,15 @@
+Options +Indexes
+IndexOptions +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription +NameWidth=* +IconsAreLinks +ShowForbidden
+
+# Enable downloads
+<FilesMatch "\.(mp3|wav|ogg|m4a)$">
+    Header set Content-Disposition "attachment"
+    Header set Content-Type "application/octet-stream"
+</FilesMatch>
+
+# Optional: Custom index styling
+IndexHeadInsert "<style>body{font-family:Inter,sans-serif;background:#0a0a0a;color:#fff;padding:20px}a{color:#00d4ff;text-decoration:none}a:hover{text-decoration:underline}table{width:100%;border-collapse:collapse}td,th{padding:10px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1)}</style>"
+
+# Optional: Add a title
+IndexOptions +SuppressHTMLPreamble
+HeaderName /music/HEADER.html
