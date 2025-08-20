@@ -16,6 +16,10 @@ function createTrackElement(track, index) {
     
     const trackNumber = String(index + 1).padStart(2, '0');
     
+    // Generate chord PDF filename from track title
+    const chordFileName = track.title + '.pdf';
+    const chordFilePath = `chords/${chordFileName}`;
+    
     li.innerHTML = `
         <span class="track-number">${trackNumber}</span>
         <button class="play-button">▶</button>
@@ -23,6 +27,13 @@ function createTrackElement(track, index) {
             <div class="track-title">${track.title}</div>
         </div>
         ${track.lyrics ? `<button class="lyrics-button" data-track-index="${index}" title="View lyrics">📄</button>` : '<span class="lyrics-spacer"></span>'}
+        <a href="${chordFilePath}" download="${chordFileName}" class="chord-button" title="Download chords (PDF)" onclick="event.stopPropagation()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M3 2v12M13 2v12M3 8h10"/>
+                <circle cx="3" cy="10" r="1.5"/>
+                <circle cx="13" cy="6" r="1.5"/>
+            </svg>
+        </a>
         <a href="${track.file}" download="${track.title}.mp3" class="download-button" title="Download track" onclick="event.stopPropagation()">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 2v8m0 0l3-3m-3 3L5 7"/>

@@ -233,8 +233,8 @@ body {
 
 .track {
     display: grid;
-    grid-template-columns: 40px 50px 1fr auto auto auto auto;
-    gap: 15px;
+    grid-template-columns: 40px 50px 1fr auto auto auto auto auto;
+    gap: 12px;
     align-items: center;
     padding: 16px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -464,6 +464,45 @@ body {
     width: 32px;
 }
 
+.chord-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    color: rgba(138, 43, 226, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.chord-button svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.chord-button svg circle {
+    fill: currentColor;
+    stroke: none;
+}
+
+.chord-button:hover {
+    border-color: rgba(138, 43, 226, 0.4);
+    background: rgba(138, 43, 226, 0.08);
+    color: rgba(138, 43, 226, 0.9);
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
 .download-button {
     width: 32px;
     height: 32px;
@@ -630,8 +669,8 @@ body {
     }
     
     .track {
-        grid-template-columns: 50px 1fr auto auto auto;
-        gap: 12px;
+        grid-template-columns: 50px 1fr auto auto auto auto;
+        gap: 10px;
     }
     
     .track-number {
