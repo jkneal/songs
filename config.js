@@ -454,6 +454,54 @@ window.songConfig = {
                 "I find myself where the silence stands.\n" +
                 "Every life has a place to pause—\n" +
                 "Rest stops remind me who I was."
+        },
+        {
+            title: "Lantern Hearts",
+            file: "music/LanternHearts.mp3",
+            duration: "4:38",
+            lyrics: "Verse 1\n" +
+                "The night gets heavy, shadows close in,\n" +
+                "But I see the glow where the light begins.\n" +
+                "A single spark in the quiet air,\n" +
+                "One lantern heart says, I’m still here.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "When the road is dark and the miles feel long,\n" +
+                "We carry the fire, we keep it strong.\n" +
+                "\n" +
+                "Chorus\n" +
+                "We are lantern hearts in the night,\n" +
+                "Shining love through the cracks of time.\n" +
+                "Holding steady when the world feels far,\n" +
+                "Guiding each other like the northern stars.\n" +
+                "No flame too small, no light too sparse—\n" +
+                "We are lantern hearts.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Windows glowing in houses we pass,\n" +
+                "Stories flicker like stained glass.\n" +
+                "Even broken glass can throw a flame,\n" +
+                "Every lantern heart burns the same.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "When the wind comes hard and the night turns cold,\n" +
+                "We hold the light, we don’t let go.\n" +
+                "\n" +
+                "Chorus\n" +
+                "We are lantern hearts in the night,\n" +
+                "Shining love through the cracks of time.\n" +
+                "Holding steady when the world feels far,\n" +
+                "Guiding each other like the northern stars.\n" +
+                "No flame too small, no light too sparse—\n" +
+                "We are lantern hearts.\n" +
+                "\n" +
+                "Chorus\n" +
+                "We are lantern hearts in the night,\n" +
+                "Shining love through the cracks of time.\n" +
+                "Holding steady when the world feels far,\n" +
+                "Guiding each other like the northern stars.\n" +
+                "No flame too small, no light too sparse—\n" +
+                "We are lantern hearts.\n"
         }
     ]
 };
