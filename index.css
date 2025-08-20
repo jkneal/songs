@@ -31,6 +31,72 @@ body {
     opacity: 0.1;
 }
 
+.background-overlay::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+    opacity: 0.05;
+    animation: pulseGlow 60s ease-in-out infinite;
+}
+
+.background-overlay::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, transparent 20%, #00d4ff 50%, transparent 80%),
+        linear-gradient(-45deg, transparent 20%, #00d4ff 50%, transparent 80%);
+    background-size: 300px 2px, 2px 300px;
+    opacity: 0.03;
+    animation: waveMove2 180s ease-in-out infinite reverse;
+}
+
+@keyframes waveMove2 {
+    0% { 
+        transform: translateX(150px) translateY(150px) rotate(0deg);
+    }
+    20% {
+        transform: translateX(-80px) translateY(100px) rotate(-10deg);
+    }
+    40% {
+        transform: translateX(120px) translateY(-120px) rotate(15deg);
+    }
+    60% {
+        transform: translateX(-150px) translateY(-80px) rotate(-8deg);
+    }
+    80% {
+        transform: translateX(100px) translateY(180px) rotate(12deg);
+    }
+    100% { 
+        transform: translateX(-150px) translateY(-150px) rotate(0deg);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1.1);
+        filter: hue-rotate(-20deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.95);
+        filter: hue-rotate(30deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) scale(1.05);
+        filter: hue-rotate(-40deg);
+    }
+}
+
 .sound-waves {
     position: absolute;
     width: 100%;
@@ -39,12 +105,52 @@ body {
         linear-gradient(90deg, transparent 0%, #00d4ff 50%, transparent 100%),
         linear-gradient(0deg, transparent 0%, #00d4ff 50%, transparent 100%);
     background-size: 200px 1px, 1px 200px;
-    animation: waveMove 20s linear infinite;
+    animation: waveMove 150s cubic-bezier(0.4, 0, 0.6, 1) infinite, colorShift 90s ease-in-out infinite;
 }
 
 @keyframes waveMove {
-    0% { transform: translateX(-200px) translateY(-200px); }
-    100% { transform: translateX(200px) translateY(200px); }
+    0% { 
+        transform: translateX(-200px) translateY(-200px) rotate(0deg) scale(1);
+    }
+    15% {
+        transform: translateX(-100px) translateY(50px) rotate(5deg) scale(1.1);
+    }
+    30% {
+        transform: translateX(100px) translateY(-100px) rotate(-3deg) scale(0.95);
+    }
+    45% {
+        transform: translateX(50px) translateY(150px) rotate(8deg) scale(1.05);
+    }
+    60% {
+        transform: translateX(150px) translateY(100px) rotate(-6deg) scale(0.98);
+    }
+    75% {
+        transform: translateX(-50px) translateY(200px) rotate(4deg) scale(1.08);
+    }
+    90% {
+        transform: translateX(180px) translateY(-50px) rotate(-2deg) scale(1.02);
+    }
+    100% { 
+        transform: translateX(200px) translateY(200px) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes colorShift {
+    0%, 100% { 
+        filter: hue-rotate(0deg) brightness(1);
+    }
+    20% { 
+        filter: hue-rotate(-30deg) brightness(1.1);
+    }
+    40% { 
+        filter: hue-rotate(20deg) brightness(0.95);
+    }
+    60% { 
+        filter: hue-rotate(-50deg) brightness(1.05);
+    }
+    80% { 
+        filter: hue-rotate(40deg) brightness(0.9);
+    }
 }
 
 .header {
