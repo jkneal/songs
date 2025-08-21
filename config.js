@@ -100,101 +100,6 @@ window.songConfig = {
                 "Paper boats on a silver stream,\n"
         },
         {
-            title: "Shadow Carousel",
-            file: "music/ShadowCarousel.mp3",
-            duration: "4:09",
-            lyrics: "Pre-Chorus\n" +
-                "Lights keep flashing but they never stay,\n" +
-                "Every joy feels one spin away.\n" +
-                "I reach for the brass ring, miss again,\n" +
-                "The circle just starts where it ends.\n" +
-                "\n" +
-                "Chorus\n" +
-                "Round and round in the shadow carousel,\n" +
-                "I can’t tell the rise from the fall.\n" +
-                "Spinning fast in a painted shell,\n" +
-                "Going nowhere but I feel it all.\n" +
-                "\n" +
-                "Verse 1\n" +
-                "Laughter echoes from another time,\n" +
-                "Cotton candy ghosts on the summer line.\n" +
-                "Every face is a blur of night,\n" +
-                "Chasing highs in a neon light.\n" +
-                "I wave to myself as I go by,\n" +
-                "Lost in the loop of a lullaby.\n" +
-                "The gears keep grinding, the music sighs,\n" +
-                "But the ride won’t stop when I close my eyes.\n" +
-                "\n" +
-                "Verse 2\n" +
-                "Mirrors bend the faces as they pass,\n" +
-                "Every smile feels painted on glass.\n" +
-                "The horses rise but they never roam,\n" +
-                "Chained to the circle they call home.\n" +
-                "I grip the rail though my knuckles ache,\n" +
-                "Praying the spin will slow or break.\n" +
-                "But the calliope plays the same refrain,\n" +
-                "A haunting melody tied to my name.\n" +
-                "\n" +
-                "Chorus\n" +
-                "Round and round in the shadow carousel,\n" +
-                "I can’t tell the rise from the fall.\n" +
-                "Spinning fast in a painted shell,\n" +
-                "Going nowhere but I feel it all.\n" +
-                "\n" +
-                "Round and round in the shadow carousel,\n" +
-                "I can’t tell the rise from the fall.\n" +
-                "Spinning fast in a painted shell,\n" +
-                "Going nowhere but I feel it all.\n"
-        },
-        {
-            title: "Page Seventeen",
-            file: "music/PageSeventeen.mp3",
-            duration: "5:06",
-            lyrics: "Verse 1 \n" +
-                "Dust writes cursive on a mailbox name,\n" +
-                "Soybeans bow like a Sunday prayer.\n" +
-                "Mama counts clouds, I count lanes,\n" +
-                "Filling the margins with county air.\n" +
-                "Every ditch a sentence, every barn a sign,\n" +
-                "Learning the grammar of a center line.\n" +
-                "\n" +
-                "Chorus\n" +
-                "On page seventeen I learned to drive,\n" +
-                "Ink like tar where the lines arrive.\n" +
-                "Left foot trembling, right foot light,\n" +
-                "White lines stitching up a nervous night.\n" +
-                "If growing up is debt and time,\n" +
-                "I paid in pavement, nickels, dimes.\n" +
-                "On page seventeen I learned to drive—\n" +
-                "Ink like tar where the lines arrive.\n" +
-                "\n" +
-                "Verse 2\n" +
-                "Dad said, “Easy now,” as the gravel sang,\n" +
-                "Stop sign grinned like a red bookmark.\n" +
-                "I stalled and laughed, heard the gate chain clang,\n" +
-                "Started again with a softer spark.\n" +
-                "The mirror held a kid I barely knew,\n" +
-                "But the road read back: “I remember you.”\n" +
-                "\n" +
-                "Chorus\n" +
-                "On page seventeen I learned to drive,\n" +
-                "Ink like tar where the lines arrive.\n" +
-                "Left foot trembling, right foot light,\n" +
-                "White lines stitching up a nervous night.\n" +
-                "If growing up is debt and time,\n" +
-                "I paid in pavement, nickels, dimes.\n" +
-                "On page seventeen I learned to drive—\n" +
-                "Ink like tar where the lines arrive.\n" +
-                "\n" +
-                "Chorus \n" +
-                "On page seventeen I learned to drive,\n" +
-                "White lines stitching up a nervous night.\n" +
-                "If growing up is debt and time,\n" +
-                "I paid in pavement, nickels, dimes.\n" +
-                "On page seventeen I learned to drive,\n" +
-                "Ink like tar where the lines arrive.\n"
-        },
-        {
             title: "Dust On The Vinyl",
             file: "music/DustOnTheVinyl.mp3",
             duration: "4:15",
@@ -243,107 +148,51 @@ window.songConfig = {
                 "There’s dust on the vinyl, but your song still plays.\n"
         },
         {
-            title: "Static Seasons",
-            file: "music/StaticSeasons.mp3",
-            duration: "2:11",
-            lyrics: "Verse 1\n" +
-                "Snow on the lamppost, same as last year,\n" +
-                "Calendar turns, but it feels like we’re still here.\n" +
-                "Coffee cup ring on the same oak table,\n" +
-                "Dreams stacked high, but we keep them stable.\n" +
-                "Neighbors wave from a frosted pane,\n" +
-                "Every day’s just a picture frame.\n" +
-                "\n" +
-                "Pre-Chorus\n" +
-                "I keep waiting for the colors to rearrange,\n" +
-                "But even the leaves know better than change.\n" +
+            title: "Shadow Carousel",
+            file: "music/ShadowCarousel.mp3",
+            duration: "4:09",
+            lyrics: "Pre-Chorus\n" +
+                "Lights keep flashing but they never stay,\n" +
+                "Every joy feels one spin away.\n" +
+                "I reach for the brass ring, miss again,\n" +
+                "The circle just starts where it ends.\n" +
                 "\n" +
                 "Chorus\n" +
-                "Static seasons spin in my hands,\n" +
-                "Same snow, same streets, same plans.\n" +
-                "Round and round in a glass-domed land,\n" +
-                "Static seasons spin in my hands.\n" +
+                "Round and round in the shadow carousel,\n" +
+                "I can’t tell the rise from the fall.\n" +
+                "Spinning fast in a painted shell,\n" +
+                "Going nowhere but I feel it all.\n" +
+                "\n" +
+                "Verse 1\n" +
+                "Laughter echoes from another time,\n" +
+                "Cotton candy ghosts on the summer line.\n" +
+                "Every face is a blur of night,\n" +
+                "Chasing highs in a neon light.\n" +
+                "I wave to myself as I go by,\n" +
+                "Lost in the loop of a lullaby.\n" +
+                "The gears keep grinding, the music sighs,\n" +
+                "But the ride won’t stop when I close my eyes.\n" +
                 "\n" +
                 "Verse 2\n" +
-                "Summer hum of the window fan,\n" +
-                "Fourth of July with the same old band.\n" +
-                "Ice cream melts in a paper bowl,\n" +
-                "Kids grow taller but the town won’t grow.\n" +
-                "Sun goes down where it always has,\n" +
-                "Behind the steeple and the railroad tracks.\n" +
-                "\n" +
-                "Pre-Chorus\n" +
-                "I keep waiting for the skyline to bend,\n" +
-                "But it just draws circles without an end.\n" +
+                "Mirrors bend the faces as they pass,\n" +
+                "Every smile feels painted on glass.\n" +
+                "The horses rise but they never roam,\n" +
+                "Chained to the circle they call home.\n" +
+                "I grip the rail though my knuckles ache,\n" +
+                "Praying the spin will slow or break.\n" +
+                "But the calliope plays the same refrain,\n" +
+                "A haunting melody tied to my name.\n" +
                 "\n" +
                 "Chorus\n" +
-                "Static seasons spin in my hands,\n" +
-                "Same snow, same streets, same plans.\n" +
-                "Round and round in a glass-domed land,\n" +
-                "Static seasons spin in my hands.\n"
-        },
-        {
-            title: "Wildflower Roads",
-            file: "music/WildflowerRoads.mp3",
-            duration: "3:41",
-            lyrics: "Verse 1\n" +
-                "I took the turn where the pavement ends,\n" +
-                "Gravel songs became my friends.\n" +
-                "Every mile was a seed unknown,\n" +
-                "Blooming colors where weeds had grown.\n" +
-                "I found grace in the cracks and stone,\n" +
-                "Where the wild things make their home.\n" +
-                "The straight lines never felt like mine,\n" +
-                "But these winding paths still shine.\n" +
+                "Round and round in the shadow carousel,\n" +
+                "I can’t tell the rise from the fall.\n" +
+                "Spinning fast in a painted shell,\n" +
+                "Going nowhere but I feel it all.\n" +
                 "\n" +
-                "Chorus\n" +
-                "Wildflower roads lead me home,\n" +
-                "Through broken ground where the beauty grows.\n" +
-                "Every detour, every stone,\n" +
-                "Wildflower roads lead me home.\n" +
-                "\n" +
-                "Verse 2\n" +
-                "I chased the signs that the world ignored,\n" +
-                "Sunset gold on the fields of clay,\n" +
-                "Taught me hope in a stubborn way.\n" +
-                "Every wrong turn, every stray,\n" +
-                "Brought me closer to today.\n" +
-                "\n" +
-                "Pre-Chorus\n" +
-                "The roots run deep where the rain won’t stay,\n" +
-                "Still the blossoms find their way.\n" +
-                "\n" +
-                "Chorus\n" +
-                "Wildflower roads lead me home,\n" +
-                "Through broken ground where the beauty grows.\n" +
-                "Every detour, every stone,\n" +
-                "Wildflower roads lead me home.\n" +
-                "\n" +
-                "Verse 3\n" +
-                "I walked through storms where the thunder cried,\n" +
-                "But the roots held fast on the mountainside.\n" +
-                "Every tear carved a deeper line,\n" +
-                "Still the blossoms turned toward light in time.\n" +
-                "Even shadows can help things grow,\n" +
-                "On the paths we’re meant to know.\n" +
-                "\n" +
-                "Chorus\n" +
-                "Wildflower roads lead me home,\n" +
-                "Through broken ground where the beauty grows.\n" +
-                "Every detour, every stone,\n" +
-                "Wildflower roads lead me home.\n" +
-                "\n" +
-                "Chorus\n" +
-                "Wildflower roads lead me home,\n" +
-                "Through broken ground where the beauty grows.\n" +
-                "Every detour, every stone,\n" +
-                "Wildflower roads lead me home.\n"
-        },
-        {
-            title: "Whispers (the jam)",
-            file: "music/Whispers.mp3",
-            duration: "3:49",
-            lyrics: null
+                "Round and round in the shadow carousel,\n" +
+                "I can’t tell the rise from the fall.\n" +
+                "Spinning fast in a painted shell,\n" +
+                "Going nowhere but I feel it all.\n"
         },
         {
             title: "Songs In The Sidewalk",
@@ -454,6 +303,157 @@ window.songConfig = {
                 "I find myself where the silence stands.\n" +
                 "Every life has a place to pause—\n" +
                 "Rest stops remind me who I was."
+        },
+        {
+            title: "Wildflower Roads",
+            file: "music/WildflowerRoads.mp3",
+            duration: "3:41",
+            lyrics: "Verse 1\n" +
+                "I took the turn where the pavement ends,\n" +
+                "Gravel songs became my friends.\n" +
+                "Every mile was a seed unknown,\n" +
+                "Blooming colors where weeds had grown.\n" +
+                "I found grace in the cracks and stone,\n" +
+                "Where the wild things make their home.\n" +
+                "The straight lines never felt like mine,\n" +
+                "But these winding paths still shine.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wildflower roads lead me home,\n" +
+                "Through broken ground where the beauty grows.\n" +
+                "Every detour, every stone,\n" +
+                "Wildflower roads lead me home.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "I chased the signs that the world ignored,\n" +
+                "Sunset gold on the fields of clay,\n" +
+                "Taught me hope in a stubborn way.\n" +
+                "Every wrong turn, every stray,\n" +
+                "Brought me closer to today.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "The roots run deep where the rain won’t stay,\n" +
+                "Still the blossoms find their way.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wildflower roads lead me home,\n" +
+                "Through broken ground where the beauty grows.\n" +
+                "Every detour, every stone,\n" +
+                "Wildflower roads lead me home.\n" +
+                "\n" +
+                "Verse 3\n" +
+                "I walked through storms where the thunder cried,\n" +
+                "But the roots held fast on the mountainside.\n" +
+                "Every tear carved a deeper line,\n" +
+                "Still the blossoms turned toward light in time.\n" +
+                "Even shadows can help things grow,\n" +
+                "On the paths we’re meant to know.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wildflower roads lead me home,\n" +
+                "Through broken ground where the beauty grows.\n" +
+                "Every detour, every stone,\n" +
+                "Wildflower roads lead me home.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wildflower roads lead me home,\n" +
+                "Through broken ground where the beauty grows.\n" +
+                "Every detour, every stone,\n" +
+                "Wildflower roads lead me home.\n"
+        },
+        {
+            title: "Whispers (the jam)",
+            file: "music/Whispers.mp3",
+            duration: "3:49",
+            lyrics: null
+        },
+        {
+            title: "Page Seventeen",
+            file: "music/PageSeventeen.mp3",
+            duration: "5:06",
+            lyrics: "Verse 1 \n" +
+                "Dust writes cursive on a mailbox name,\n" +
+                "Soybeans bow like a Sunday prayer.\n" +
+                "Mama counts clouds, I count lanes,\n" +
+                "Filling the margins with county air.\n" +
+                "Every ditch a sentence, every barn a sign,\n" +
+                "Learning the grammar of a center line.\n" +
+                "\n" +
+                "Chorus\n" +
+                "On page seventeen I learned to drive,\n" +
+                "Ink like tar where the lines arrive.\n" +
+                "Left foot trembling, right foot light,\n" +
+                "White lines stitching up a nervous night.\n" +
+                "If growing up is debt and time,\n" +
+                "I paid in pavement, nickels, dimes.\n" +
+                "On page seventeen I learned to drive—\n" +
+                "Ink like tar where the lines arrive.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Dad said, “Easy now,” as the gravel sang,\n" +
+                "Stop sign grinned like a red bookmark.\n" +
+                "I stalled and laughed, heard the gate chain clang,\n" +
+                "Started again with a softer spark.\n" +
+                "The mirror held a kid I barely knew,\n" +
+                "But the road read back: “I remember you.”\n" +
+                "\n" +
+                "Chorus\n" +
+                "On page seventeen I learned to drive,\n" +
+                "Ink like tar where the lines arrive.\n" +
+                "Left foot trembling, right foot light,\n" +
+                "White lines stitching up a nervous night.\n" +
+                "If growing up is debt and time,\n" +
+                "I paid in pavement, nickels, dimes.\n" +
+                "On page seventeen I learned to drive—\n" +
+                "Ink like tar where the lines arrive.\n" +
+                "\n" +
+                "Chorus \n" +
+                "On page seventeen I learned to drive,\n" +
+                "White lines stitching up a nervous night.\n" +
+                "If growing up is debt and time,\n" +
+                "I paid in pavement, nickels, dimes.\n" +
+                "On page seventeen I learned to drive,\n" +
+                "Ink like tar where the lines arrive.\n"
+        },
+        {
+            title: "Static Seasons",
+            file: "music/StaticSeasons.mp3",
+            duration: "2:11",
+            lyrics: "Verse 1\n" +
+                "Snow on the lamppost, same as last year,\n" +
+                "Calendar turns, but it feels like we’re still here.\n" +
+                "Coffee cup ring on the same oak table,\n" +
+                "Dreams stacked high, but we keep them stable.\n" +
+                "Neighbors wave from a frosted pane,\n" +
+                "Every day’s just a picture frame.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "I keep waiting for the colors to rearrange,\n" +
+                "But even the leaves know better than change.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Static seasons spin in my hands,\n" +
+                "Same snow, same streets, same plans.\n" +
+                "Round and round in a glass-domed land,\n" +
+                "Static seasons spin in my hands.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Summer hum of the window fan,\n" +
+                "Fourth of July with the same old band.\n" +
+                "Ice cream melts in a paper bowl,\n" +
+                "Kids grow taller but the town won’t grow.\n" +
+                "Sun goes down where it always has,\n" +
+                "Behind the steeple and the railroad tracks.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "I keep waiting for the skyline to bend,\n" +
+                "But it just draws circles without an end.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Static seasons spin in my hands,\n" +
+                "Same snow, same streets, same plans.\n" +
+                "Round and round in a glass-domed land,\n" +
+                "Static seasons spin in my hands.\n"
         },
         {
             title: "Lantern Hearts",
