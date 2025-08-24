@@ -502,6 +502,62 @@ window.songConfig = {
                 "Guiding each other like the northern stars.\n" +
                 "No flame too small, no light too sparse—\n" +
                 "We are lantern hearts.\n"
+        },
+        {
+            title: "My Morning Song",
+            file: "music/MyMorningSong.mp3",
+            duration: "3:41",
+            lyrics: "Verse 1\n" +
+                "Sun through the blinds writes gold on the floor,\n" +
+                "Kettle starts humming like a promise at the door.\n" +
+                "Last night’s worries folded on a chair,\n" +
+                "I breathe them out with the cool, clean air.\n" +
+                "Boxes of yesterday stacked in my mind,\n" +
+                "I label them “kept” and “left behind.”\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Turn the page, strike the light,\n" +
+                "Let the quiet make it right.\n" +
+                "\n" +
+                "Chorus\n" +
+                "This is my morning song—\n" +
+                "New lines, new lungs, I’m moving on.\n" +
+                "Open the window, let the day rush in,\n" +
+                "I’m not who I was; I begin again.\n" +
+                "Goodbye to the dark that held too long—\n" +
+                "Hello to the dawn, my morning song.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Keys on the counter, shoes by the mat,\n" +
+                "Phone full of numbers I’m ready to tap.\n" +
+                "Street yawns wide with a gentle roar,\n" +
+                "I step to the rhythm I was made for.\n" +
+                "Coffee on the lip, sunlight on my sleeve,\n" +
+                "I’m learning how to stay and how to leave.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Name the hope, let it stay,\n" +
+                "Tell my heart it’s safe today.\n" +
+                "\n" +
+                "Chorus\n" +
+                "This is my morning song—\n" +
+                "New lines, new lungs, I’m moving on.\n" +
+                "Open the window, let the day rush in,\n" +
+                "I’m not who I was; I begin again.\n" +
+                "Goodbye to the dark that held too long—\n" +
+                "Hello to the dawn, my morning song.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Turn the page, strike the light,\n" +
+                "Let the quiet save today.\n" +
+                "\n" +
+                "Chorus\n" +
+                "This is my morning song—\n" +
+                "New lines, new lungs, I’m moving on.\n" +
+                "Open the window, let the day rush in,\n" +
+                "I’m not who I was; I begin again.\n" +
+                "Goodbye to the dark that held too long—\n" +
+                "Hello to the dawn, my morning song.\n"
         }
     ]
 };
