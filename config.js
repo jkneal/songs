@@ -558,6 +558,64 @@ window.songConfig = {
                 "I’m not who I was; I begin again.\n" +
                 "Goodbye to the dark that held too long—\n" +
                 "Hello to the dawn, my morning song.\n"
+        },
+        {
+            title: "Backyard Conductor",
+            file: "music/BackyardConductor.mp3",
+            duration: "4:12",
+            lyrics: "Verse 1\n" +
+                "Screen door sighs, summer air in my hands,\n" +
+                "Bare feet tapping soft dust into plans.\n" +
+                "You lift a wooden spoon like a maestro’s wand,\n" +
+                "Charcoal drums roll low from the grill beyond.\n" +
+                "Neighbors laugh in a distant key,\n" +
+                "And the maple leaves whisper harmony.\n" +
+                "No stage, no set list written down—\n" +
+                "The evening writes the music of our town.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wind chimes lead the evening band,\n" +
+                "Porch light halo over music stands.\n" +
+                "Fireflies counting out the time,\n" +
+                "Cicadas bow on a crooked line.\n" +
+                "We play the day with what we’ve got on hand—\n" +
+                "Wind chimes lead the evening band.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Sprinkler hi-hat ticks the lawn,\n" +
+                "Ice in a glass keeps time till dawn.\n" +
+                "Dog tags jingle like a tambourine,\n" +
+                "Freight train saxophone far and lean.\n" +
+                "Clothesline sings when the breeze turns strong,\n" +
+                "Fence boards rumble the bass along.\n" +
+                "No ticket price for this parade—\n" +
+                "The ordinary makes a serenade.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wind chimes lead the evening band,\n" +
+                "Porch light halo over music stands.\n" +
+                "Fireflies counting out the time,\n" +
+                "Cicadas bow on a crooked line.\n" +
+                "We play the day with what we’ve got on hand—\n" +
+                "Wind chimes lead the evening band.\n" +
+                "\n" +
+                "Verse 3\n" +
+                "Mason jars chime with a soft tin ring,\n" +
+                "Old box fan hums like an organ string.\n" +
+                "Screen door claps on the two and four,\n" +
+                "Moths brush the bulb like brushes on a snare.\n" +
+                "Garden hose scribbles a wavering tone,\n" +
+                "Gutter slides guitar when the wind has grown.\n" +
+                "Distant AM cheers from a diamond bright—\n" +
+                "We lift our spoons and cue the night.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Wind chimes lead the evening band,\n" +
+                "Porch light halo over music stands.\n" +
+                "Fireflies counting out the time,\n" +
+                "Cicadas bow on a crooked line.\n" +
+                "We play the day with what we’ve got on hand—\n" +
+                "Wind chimes lead the evening band.\n"
         }
     ]
 };
