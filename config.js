@@ -616,6 +616,68 @@ window.songConfig = {
                 "Cicadas bow on a crooked line.\n" +
                 "We play the day with what we’ve got on hand—\n" +
                 "Wind chimes lead the evening band.\n"
+        },
+        {
+            title: "Shake-Up Smile",
+            file: "music/ShakeUpSmile.mp3",
+            duration: "5:35",
+            lyrics: "Verse 1\n" +
+                "State fair sun and a wristband tan,\n" +
+                "Midway dust on my shoes and hands.\n" +
+                "Paper cup lemonade stand line,\n" +
+                "You shake that ice like a tambourine time.\n" +
+                "Sugar storm, little lemon slice grin,\n" +
+                "You pass me a sip and the world spins in.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Heat waves dance on the gravel aisle,\n" +
+                "You tilt the cup and tilt my smile.\n" +
+                "\n" +
+                "Chorus\n" +
+                "You got that lemon shake-up smile—\n" +
+                "Sweet and wild for a hundred county miles.\n" +
+                "Little bit of sugar, little bit of bite,\n" +
+                "Sunshine swirling in a plastic light.\n" +
+                "Spin it up, pour it over ice,\n" +
+                "Squeeze the day and make it bright.\n" +
+                "You got that lemon shake-up smile—\n" +
+                "And suddenly everything’s alright.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Ring-toss luck and a goldfish prize,\n" +
+                "Cotton-candy sky in your laughing eyes.\n" +
+                "Ferris wheel creaks like an old love song,\n" +
+                "We rise with the lights and hum along.\n" +
+                "Tickets like fireflies, fading slow,\n" +
+                "But you keep the glow when the bulbs go low.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "If joy’s a line, I’ll wait awhile—\n" +
+                "For one more sip, one more smile.\n" +
+                "\n" +
+                "Chorus\n" +
+                "You got that lemon shake-up smile—\n" +
+                "Sweet and wild for a hundred county miles.\n" +
+                "Little bit of sugar, little bit of bite,\n" +
+                "Sunshine swirling in a plastic light.\n" +
+                "Spin it up, pour it over ice,\n" +
+                "Squeeze the day and make it bright.\n" +
+                "You got that lemon shake-up smile—\n" +
+                "And suddenly everything’s alright.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "If joy’s a line, I’ll wait awhile—\n" +
+                "For one more sip, one more smile.\n" +
+                "\n" +
+                "Chorus\n" +
+                "You got that lemon shake-up smile—\n" +
+                "Sweet and wild for a hundred county miles.\n" +
+                "Little bit of sugar, little bit of bite,\n" +
+                "Sunshine swirling in a plastic light.\n" +
+                "Spin it up, pour it over ice,\n" +
+                "Squeeze the day and make it bright.\n" +
+                "You got that lemon shake-up smile—\n" +
+                "And suddenly everything’s alright.\n"
         }
     ]
 };
