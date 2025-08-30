@@ -680,12 +680,6 @@ window.songConfig = {
                 "And suddenly everything’s alright.\n"
         },
         {
-            title: "Perfect In The Amber",
-            file: "music/PerfectInTheAmber.mp3",
-            duration: "4:43",
-            lyrics: ""
-        },
-        {
             title: "Loving Forever 70s",
             file: "music/LivingForever70s.mp3",
             duration: "4:29",
