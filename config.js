@@ -683,7 +683,71 @@ window.songConfig = {
             title: "Loving Forever 70s",
             file: "music/LivingForever70s.mp3",
             duration: "4:29",
-            lyrics: ""
+            lyrics: "Chorus\n" +
+                "We’re riding on a seventies jam,\n" +
+                "Lost in the moment, no one gives a damn.\n" +
+                "Guitars talking like an old best friend,\n" +
+                "Drums keep rolling, the night won’t end.\n" +
+                "Every note’s a fire, every beat’s a plan,\n" +
+                "We’re living forever in a seventies jam.\n" +
+                "\n" +
+                "Verse 1\n" +
+                "Patchouli haze and the floorboards shake,\n" +
+                "Tie-dye colors in the sound we make.\n" +
+                "Marshall stacks hum, the crowd leans in,\n" +
+                "Every riff a river where the night begins.\n" +
+                "No setlist written, just follow the sound,\n" +
+                "The groove finds us and spins us ‘round.\n" +
+                "\n" +
+                "Chorus\n" +
+                "We’re riding on a seventies jam,\n" +
+                "Lost in the moment, no one gives a damn.\n" +
+                "Guitars talking like an old best friend,\n" +
+                "Drums keep rolling, the night won’t end.\n" +
+                "Every note’s a fire, every beat’s a plan,\n" +
+                "We’re living forever in a seventies jam.\n"
+        },
+        {
+            title: "Porch Swing Two-Step",
+            file: "music/PorchSwingTwoStep.mp3",
+            duration: "2:44",
+            lyrics: "Verse 1\n" +
+                "Friday night screen door sighs in time,\n" +
+                "July breeze on a clothesline rhyme.\n" +
+                "Chain links whisper on the old porch swing,\n" +
+                "Bare feet tapping like a tambourine.\n" +
+                "\n" +
+                "Crickets start a backroad groove,\n" +
+                "You smile and the whole place moves.\n" +
+                "No dress code, no cover charge,\n" +
+                "Just summer air and a little backyard.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Meet me where the porch light keeps the beat,\n" +
+                "We’ll two-step soft on these weathered boards.\n" +
+                "Left, right, laugh, you lead then me—\n" +
+                "Hearts keeping time with the creaks and chords.\n" +
+                "Turn me slow in the evening heat,\n" +
+                "Meet me where the porch light keeps the beat.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Jar of lemonade, moon on the rim,\n" +
+                "Radio low with a faded hymn.\n" +
+                "Neighbor dog yawns, truck rolls by,\n" +
+                "Fireflies blink like the bandstand lights.\n" +
+                "\n" +
+                "You tilt your head and count to two—\n" +
+                "Suddenly the night says “you.”\n" +
+                "No neon sign, no city streets,\n" +
+                "Just your hand finding mine in the sheets of heat.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Meet me where the porch light keeps the beat,\n" +
+                "We’ll two-step soft on these weathered boards.\n" +
+                "Left, right, laugh, you lead then me—\n" +
+                "Hearts keeping time with the creaks and chords.\n" +
+                "Spin me once in the evening heat,\n" +
+                "Meet me where the porch light keeps the beat.\n"
         }
     ]
 };
