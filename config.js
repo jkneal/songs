@@ -748,6 +748,78 @@ window.songConfig = {
                 "Hearts keeping time with the creaks and chords.\n" +
                 "Spin me once in the evening heat,\n" +
                 "Meet me where the porch light keeps the beat.\n"
+        },
+        {
+            title: "Cache Of Us",
+            file: "music/CacheOfUs.mp3",
+            duration: "4:30",
+            lyrics: "Verse 1\n" +
+                "Closet light, midnight hush,\n" +
+                "Cardboard box behind the brush.\n" +
+                "Ticket stubs, folded notes,\n" +
+                "Napkin hearts, a pressed blue rose.\n" +
+                "Your laugh hides in old sleeves,\n" +
+                "Smells like rain and summer leaves.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Only paper, dust, and string—\n" +
+                "Funny how they move a thing.\n" +
+                "\n" +
+                "Chorus\n" +
+                "In the cache of us I find\n" +
+                "The we we used to be.\n" +
+                "Postcards with no address,\n" +
+                "Notes signed call me, please.\n" +
+                "It hurts and it holds me—\n" +
+                "Soft ache, stubborn trust.\n" +
+                "I meet our younger selves again\n" +
+                "In the cache of us.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Jacket pocket saves a song,\n" +
+                "Matchbooks from a night too long.\n" +
+                "Key you left upon the hook,\n" +
+                "Corners bent on every book.\n" +
+                "Window light on Polaroids,\n" +
+                "Whole July in little voids.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "If I let these relics go,\n" +
+                "Will the good still find its road?\n" +
+                "\n" +
+                "Chorus\n" +
+                "In the cache of us I find\n" +
+                "The we we used to be.\n" +
+                "Postcards with no address,\n" +
+                "Notes signed call me, please.\n" +
+                "It hurts and it holds me—\n" +
+                "Soft ache, stubborn trust.\n" +
+                "I meet our younger selves again\n" +
+                "In the cache of us.\n" +
+                "\n" +
+                "Verse 3\n" +
+                "Kitchen drawer, rubber bands,\n" +
+                "Your recipe in careful hands.\n" +
+                "Wax-drip candle, birthday tin,\n" +
+                "Laughter caught along the rim.\n" +
+                "Map edge with a penciled star,\n" +
+                "Key on string from our first car.\n" +
+                "Pressed leaf, autumn’s quiet hush—\n" +
+                "All the ways we learned to trust.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Place it back, heart unclutched;\n" +
+                "Some things stay without a touch.\n" +
+                "\n" +
+                "Chorus\n" +
+                "In the cache of us I find\n" +
+                "The we we used to be.\n" +
+                "Postcards with no address,\n" +
+                "Notes signed call me, please.\n" +
+                "It hurts and it holds me—\n" +
+                "Soft ache, stubborn trust.\n" +
+                "I meet our younger selves again\n" +
+                "In the cache of us.\n"
         }
     ]
 };
