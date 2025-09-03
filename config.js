@@ -807,10 +807,6 @@ window.songConfig = {
                 "Pressed leaf, autumn’s quiet hush—\n" +
                 "All the ways we learned to trust.\n" +
                 "\n" +
-                "Pre-Chorus\n" +
-                "Place it back, heart unclutched;\n" +
-                "Some things stay without a touch.\n" +
-                "\n" +
                 "Chorus\n" +
                 "In the cache of us I find\n" +
                 "The we we used to be.\n" +
