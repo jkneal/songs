@@ -839,6 +839,7 @@ window.songConfig = {
                 "Let the hills make harmony\n" +
                 "’Til the city falls out of my mind.\n" +
                 "Where the creek keeps time and the leaves keep time,\n" +
+                "Where the creek keeps time and the leaves keep time,\n" +
                 "Little Nashville, sing me home tonight.\n" +
                 "\n" +
                 "Verse 2\n" +
@@ -866,6 +867,8 @@ window.songConfig = {
                 "Ghost of a chorus in the cottonwood.\n" +
                 "Some lights fade, but the song remains—\n" +
                 "You can’t outrun these country lanes.\n" +
+                "Where the creek keeps time and the leaves keep time,\n" +
+                "Little Nashville, sing me home tonight.\n" +
                 "\n" +
                 "Verse 3\n" +
                 "Postcards, honey, and a cedar pine,\n" +
