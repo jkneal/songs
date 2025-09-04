@@ -816,6 +816,76 @@ window.songConfig = {
                 "Soft ache, stubborn trust.\n" +
                 "I meet our younger selves again\n" +
                 "In the cache of us.\n"
+        },
+        {
+            title: "Little Nashville, Sing Me Home",
+            file: "music/LittleNashville.mp3",
+            duration: "4:46",
+            lyrics: "Verse 1\n" +
+                "Two-lane 46 in an autumn haze,\n" +
+                "Maples setting every hillside blaze.\n" +
+                "Gallery windows catch the morning gold,\n" +
+                "Fiddle by a doorway warms the cold.\n" +
+                "Boots pick up that brown county clay,\n" +
+                "Salt Creek hums a low back-road sway.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "I breathe in slow, hear the town tune up—\n" +
+                "Every porch light ringing like a cup.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Little Nashville, hold me easy,\n" +
+                "Paint me in your October light.\n" +
+                "Let the hills make harmony\n" +
+                "’Til the city falls out of my mind.\n" +
+                "Where the creek keeps time and the leaves keep time,\n" +
+                "Little Nashville, sing me home tonight.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Coffee on the steps as the shops unlock,\n" +
+                "Potter’s wheel spinning out the talk.\n" +
+                "Glass flame blooming in a roadside shed,\n" +
+                "Brushstrokes dancing where the painters tread.\n" +
+                "Bean Blossom bridge with a rust-red rhyme,\n" +
+                "Banjo in the breeze keeps perfect time.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "I walk your street like a melody,\n" +
+                "Every footstep finding key.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Little Nashville, hold me easy,\n" +
+                "Paint me in your October light.\n" +
+                "Let the hills make harmony\n" +
+                "’Til the city falls out of my mind.\n" +
+                "Where the creek keeps time and the leaves keep time,\n" +
+                "Little Nashville, sing me home tonight.\n" +
+                "\n" +
+                "Bridge\n" +
+                "Heard an old Opry echo down the road,\n" +
+                "Ghost of a chorus in the cottonwood.\n" +
+                "Some lights fade, but the song remains—\n" +
+                "You can’t outrun these country lanes.\n" +
+                "\n" +
+                "Verse 3\n" +
+                "Postcards, honey, and a cedar pine,\n" +
+                "I pack the quiet like a souvenir line.\n" +
+                "Sun tips west on the covered beams,\n" +
+                "I carry out more room to dream.\n" +
+                "Rearview full of red and gold,\n" +
+                "Your hills still singing soft and low.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Dusk bows a fiddle on the ridge,\n" +
+                "I count to four and cross the bridge.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Little Nashville, hold me easy,\n" +
+                "Paint me in your October light.\n" +
+                "Let the hills make harmony\n" +
+                "’Til the city falls out of my mind.\n" +
+                "Where the creek keeps time and the leaves keep time,\n" +
+                "Little Nashville, sing me home tonight.\n"
         }
     ]
 };
