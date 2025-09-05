@@ -889,6 +889,70 @@ window.songConfig = {
                 "’Til the city falls out of my mind.\n" +
                 "Where the creek keeps time and the leaves keep time,\n" +
                 "Little Nashville, sing me home tonight.\n"
+        },
+        {
+            title: "Split Rail Summer",
+            file: "music/SplitRailSummer.mp3",
+            duration: "3:51",
+            lyrics: "Verse 1\n" +
+                "Sun on the pasture, dust in our lungs,\n" +
+                "Arms out wide like wings we’d hung.\n" +
+                "Bare feet tiptoe on the weathered grain,\n" +
+                "Splinters, laughter, grass-stain pain.\n" +
+                "Creek ran silver past the hay,\n" +
+                "Time moved slow in a golden sway.\n" +
+                "Count to ten, breathe and stay—\n" +
+                "Learned our courage the wobbly way.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Split-rail summer, sky for a roof,\n" +
+                "Sun-bleached wood under tender proof.\n" +
+                "We learned balance on a fence of days—\n" +
+                "Fall, then climb, find a steadier way.\n" +
+                "Rusted wire and a little faith,\n" +
+                "Held us up when the boards would shake.\n" +
+                "Split-rail summer, simple and brave—\n" +
+                "We learned balance on a fence of days.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Ball caps, bikes, sweet Kool-Aid lips,\n" +
+                "Stormheads stacking on the county strips.\n" +
+                "Barn cat prowling by the leaning gate,\n" +
+                "Thunder counted—one… two… wait.\n" +
+                "Fair posters peeling on the feed-store door,\n" +
+                "Dreams chalk-white on the outfield floor.\n" +
+                "Didn’t know about leaving yet—\n" +
+                "Only how to not forget.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Split-rail summer, sky for a roof,\n" +
+                "Sun-bleached wood under tender proof.\n" +
+                "We learned balance on a fence of days—\n" +
+                "Fall, then climb, find a steadier way.\n" +
+                "Rusted wire and a little faith,\n" +
+                "Held us up when the boards would shake.\n" +
+                "Split-rail summer, simple and brave—\n" +
+                "We learned balance on a fence of days.\n" +
+                "\n" +
+                "Verse 3\n" +
+                "Back home driving past the pasture line,\n" +
+                "Posts still lean in a patient spine.\n" +
+                "I park, I walk, the cicadas sing,\n" +
+                "The air remembers everything.\n" +
+                "One more step on the narrow seam—\n" +
+                "Older now, but the balance keen.\n" +
+                "Arms out wide, I test the sway—\n" +
+                "Old rails teach me how to stay.\n" +
+                "\n" +
+                "Final Chorus\n" +
+                "Split-rail summer, sky for a roof,\n" +
+                "Sun-bleached wood under tender proof.\n" +
+                "We learned balance on a fence of days—\n" +
+                "Fall, then climb, find a steadier way.\n" +
+                "Rusted wire and a little faith,\n" +
+                "Still enough when the big winds shake.\n" +
+                "Split-rail summer, simple and brave—\n" +
+                "We learned balance on a fence of days.\n"
         }
     ]
 };
