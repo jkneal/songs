@@ -944,7 +944,7 @@ window.songConfig = {
                 "Arms out wide, I test the sway—\n" +
                 "Old rails teach me how to stay.\n" +
                 "\n" +
-                "Final Chorus\n" +
+                "Chorus\n" +
                 "Split-rail summer, sky for a roof,\n" +
                 "Sun-bleached wood under tender proof.\n" +
                 "We learned balance on a fence of days—\n" +
@@ -1006,7 +1006,7 @@ window.songConfig = {
                 "Golden-hour grin—take the long way home,\n" +
                 "My feet find rhythm wherever I roam.\n" +
                 "\n" +
-                "Final Chorus\n" +
+                "Chorus\n" +
                 "Saturday sneakers, scuff the week right off,\n" +
                 "Rubber souls preaching little hallelujahs in chalk.\n" +
                 "Front-porch laughter, skyline soft,\n" +
