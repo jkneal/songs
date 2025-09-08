@@ -953,6 +953,64 @@ window.songConfig = {
                 "Still enough when the big winds shake.\n" +
                 "Split-rail summer, simple and brave—\n" +
                 "We learned balance on a fence of days.\n"
+        },
+        {
+            title: "Saturday Sneakers",
+            file: "music/SaturdaySneakers.mp3",
+            duration: "5:17",
+            lyrics: "Verse 1\n" +
+                "Alarm off, blinds up, blue on the street,\n" +
+                "Toast pops gold, I’m light on my feet.\n" +
+                "Keys in a bowl, phone in my bag,\n" +
+                "Week fell off like an old name tag.\n" +
+                "Sun says go, breeze says please,\n" +
+                "Front door laughs in a major key.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Tie once tight, double-knot free—\n" +
+                "I’m walking out of Monday’s sleep.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Saturday sneakers, scuff the week right off,\n" +
+                "Rubber souls preaching little hallelujahs in chalk.\n" +
+                "Windows down spirit, pockets full of soft,\n" +
+                "Saturday sneakers, I’m good to go, no stop.\n" +
+                "\n" +
+                "Verse 2\n" +
+                "Corner café, smile on tap,\n" +
+                "Paper cup joy with a cinnamon cap.\n" +
+                "Market on Main, vinyl and vines,\n" +
+                "Neighbors wave in easy time.\n" +
+                "Crosswalk drum, pigeons parade,\n" +
+                "Every block a lemonade.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Step to the sun, heel-to-toe grace—\n" +
+                "I keep the bright at a jogging pace.\n" +
+                "\n" +
+                "Chorus\n" +
+                "Saturday sneakers, scuff the week right off,\n" +
+                "Rubber souls preaching little hallelujahs in chalk.\n" +
+                "Windows down spirit, pockets full of soft,\n" +
+                "Saturday sneakers, I’m good to go, no stop.\n" +
+                "\n" +
+                "Verse 3\n" +
+                "Sidewalk fair with the paper flags,\n" +
+                "Thrift-store jackets, jokes in bags.\n" +
+                "Busker bends a silver tune,\n" +
+                "Kids chalk rockets to the moon.\n" +
+                "Barbershop bell, screen door swing,\n" +
+                "Every little moment wants to sing.\n" +
+                "\n" +
+                "Pre-Chorus\n" +
+                "Golden-hour grin—take the long way home,\n" +
+                "My feet find rhythm wherever I roam.\n" +
+                "\n" +
+                "Final Chorus\n" +
+                "Saturday sneakers, scuff the week right off,\n" +
+                "Rubber souls preaching little hallelujahs in chalk.\n" +
+                "Front-porch laughter, skyline soft,\n" +
+                "Saturday sneakers, I’m good to go—no stop.\n"
         }
     ]
 };
