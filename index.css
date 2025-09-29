@@ -195,12 +195,21 @@ body {
     justify-content: flex-start;
 }
 
+.main-container.structure-open {
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+}
+
+.main-container.structure-open {
+    justify-content: flex-start;
+}
+
 .playlist-section {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 40px;
-    max-width: 700px;
+    max-width: 780px;
     width: 100%;
 }
 
@@ -233,8 +242,8 @@ body {
 
 .track {
     display: grid;
-    grid-template-columns: 40px 50px 1fr auto auto auto auto auto;
-    gap: 12px;
+    grid-template-columns: 40px 50px 1fr auto auto auto auto auto auto auto;
+    gap: 8px;
     align-items: center;
     padding: 16px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -407,6 +416,39 @@ body {
     border-color: #00b8e6;
 }
 
+.control-btn.loop-clear {
+    background: rgba(255, 193, 7, 0.15);
+    border-color: rgba(255, 193, 7, 0.4);
+    color: rgba(255, 193, 7, 0.9);
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn.loop-clear:hover {
+    background: rgba(255, 193, 7, 0.25);
+    border-color: rgba(255, 193, 7, 0.6);
+    color: rgb(255, 193, 7);
+    transform: scale(1.05);
+}
+
+.control-btn.loop-clear svg {
+    width: 16px;
+    height: 16px;
+}
+
+.loop-section-text {
+    color: rgba(0, 212, 255, 0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 12px;
+    animation: pulse 2s ease-in-out infinite;
+    white-space: nowrap;
+}
+
 .progress-container {
     display: flex;
     align-items: center;
@@ -516,7 +558,7 @@ body {
     justify-content: center;
     transition: all 0.2s ease;
     text-decoration: none;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 .download-button svg {
@@ -539,6 +581,76 @@ body {
     background: rgba(255, 255, 255, 0.08);
     color: rgba(255, 255, 255, 0.9);
     transform: translateY(-1px);
+}
+
+.stems-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    color: rgba(0, 212, 255, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.stems-button svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.stems-button svg path:last-child {
+    fill: currentColor;
+    stroke: none;
+}
+
+.stems-button:hover {
+    border-color: rgba(0, 212, 255, 0.4);
+    background: rgba(0, 212, 255, 0.08);
+    color: rgba(0, 212, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+.structure-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid rgba(255, 165, 0, 0.2);
+    color: rgba(255, 165, 0, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.structure-button svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.structure-button:hover {
+    border-color: rgba(255, 165, 0, 0.4);
+    background: rgba(255, 165, 0, 0.08);
+    color: rgba(255, 165, 0, 0.9);
+    transform: translateY(-1px);
+}
+
+.structure-spacer {
+    width: 32px;
+    display: inline-block;
 }
 
 .lyrics-panel {
@@ -650,6 +762,323 @@ body {
     margin-top: 40px;
 }
 
+.structure-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    width: 450px;
+    max-height: 630px;
+    display: none;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.structure-panel.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.structure-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.structure-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.structure-close {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.structure-close:hover {
+    border-color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
+    color: #ff4444;
+}
+
+.structure-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: -10px;
+    padding: 0 10px 0 4px;
+}
+
+.structure-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.structure-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+}
+
+.structure-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.structure-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 165, 0, 0.4);
+}
+
+.structure-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.structure-overview {
+    background: rgba(255, 165, 0, 0.05);
+    border: 1px solid rgba(255, 165, 0, 0.15);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.tempo-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tempo-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 165, 0, 0.9);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.structure-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.structure-section {
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 12px;
+    align-items: center;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Color coding for different section types */
+.structure-section.section-verse {
+    background: rgba(95, 180, 120, 0.2);
+    border-color: rgba(95, 180, 120, 0.5);
+}
+
+.structure-section.section-chorus {
+    background: rgba(240, 180, 80, 0.2);
+    border-color: rgba(240, 180, 80, 0.5);
+}
+
+.structure-section.section-intro {
+    background: rgba(80, 140, 240, 0.2);
+    border-color: rgba(80, 140, 240, 0.5);
+}
+
+.structure-section.section-outro {
+    background: rgba(240, 120, 120, 0.2);
+    border-color: rgba(240, 120, 120, 0.5);
+}
+
+.structure-section.section-bridge {
+    background: rgba(160, 100, 200, 0.2);
+    border-color: rgba(160, 100, 200, 0.5);
+}
+
+.structure-section.section-solo {
+    background: rgba(255, 100, 255, 0.2);
+    border-color: rgba(255, 100, 255, 0.5);
+}
+
+.structure-section.section-prechorus {
+    background: rgba(100, 200, 200, 0.2);
+    border-color: rgba(100, 200, 200, 0.5);
+}
+
+.structure-section.section-insbreak {
+    background: rgba(200, 150, 255, 0.2);
+    border-color: rgba(200, 150, 255, 0.5);
+}
+
+.structure-section.section-default {
+    background: rgba(180, 180, 180, 0.1);
+    border-color: rgba(180, 180, 180, 0.3);
+}
+
+/* Hover effects for each section type */
+.structure-section.section-verse:hover {
+    background: rgba(95, 180, 120, 0.35);
+    border-color: rgba(95, 180, 120, 0.7);
+}
+
+.structure-section.section-chorus:hover {
+    background: rgba(240, 180, 80, 0.35);
+    border-color: rgba(240, 180, 80, 0.7);
+}
+
+.structure-section.section-intro:hover {
+    background: rgba(80, 140, 240, 0.35);
+    border-color: rgba(80, 140, 240, 0.7);
+}
+
+.structure-section.section-outro:hover {
+    background: rgba(240, 120, 120, 0.35);
+    border-color: rgba(240, 120, 120, 0.7);
+}
+
+.structure-section.section-bridge:hover {
+    background: rgba(160, 100, 200, 0.35);
+    border-color: rgba(160, 100, 200, 0.7);
+}
+
+.structure-section.section-solo:hover {
+    background: rgba(255, 100, 255, 0.35);
+    border-color: rgba(255, 100, 255, 0.7);
+}
+
+.structure-section.section-prechorus:hover {
+    background: rgba(100, 200, 200, 0.35);
+    border-color: rgba(100, 200, 200, 0.7);
+}
+
+.structure-section.section-insbreak:hover {
+    background: rgba(200, 150, 255, 0.35);
+    border-color: rgba(200, 150, 255, 0.7);
+}
+
+.structure-section.section-default:hover {
+    background: rgba(180, 180, 180, 0.2);
+    border-color: rgba(180, 180, 180, 0.5);
+}
+
+/* Active section indicator */
+.structure-section.section-active {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6) !important;
+    transform: scale(1.02);
+    margin: 2px;
+}
+
+/* Section play button */
+.section-play-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+.structure-section:hover .section-play-btn {
+    opacity: 1;
+}
+
+.section-play-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+
+.section-play-btn svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
+
+/* Loop indicator in player */
+.loop-indicator {
+    color: rgba(0, 212, 255, 0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 8px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+.section-name {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.section-bars-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.section-bars {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.section-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 165, 0, 0.6);
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
@@ -669,7 +1098,7 @@ body {
     }
     
     .track {
-        grid-template-columns: 50px 1fr auto auto auto auto;
+        grid-template-columns: 50px 1fr auto auto auto auto auto;
         gap: 10px;
     }
     

@@ -4,6 +4,47 @@ window.songConfig = {
             title: "Under A Hoosier Sky",
             file: "music/UnderAHoosierSky.mp3",
             duration: "3:56",
+            stems: "stems/UnderAHoosierSky.zip",
+            tempo: 96,
+            structure: [
+                { name: "Intro", bars: 2, timeSignature: "4/4" },
+                { name: "Verse 1", bars: 12, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 5, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "2/4" },
+                        { count: 2, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "2/4" },
+                        { count: 2, timeSignature: "4/4" }
+                    ]
+                },
+                { name: "Verse 2", bars: 8, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 5, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "2/4" },
+                        { count: 3, timeSignature: "4/4" }
+                    ]
+                },
+                { name: "Fiddle Solo", bars: 8, timeSignature: "4/4" },
+                { name: "Guitar Solo", bars: 6, timeSignature: "4/4" },
+                { name: "Verse 3", bars: 8, timeSignature: "4/4" },
+                { name: "F/G Solo", bars: 2, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 5, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "2/4" },
+                        { count: 2, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "2/4" },
+                        { count: 2, timeSignature: "4/4" }
+                    ]
+                },
+                { name: "Fiddle Solo", bars: 8, timeSignature: "4/4" },
+                { name: "Outro", bars: 12, timeSignature: "4/4" }
+            ],
             lyrics: "Verse 1\n" +
                 "Screen door slams, June thunder on a tin roof drum,\n" +
                 "Fireflies stitching gold along the fencerow run.\n" +
@@ -55,6 +96,23 @@ window.songConfig = {
             title: "Paper Boats",
             file: "music/PaperBoats.mp3",
             duration: "4:28",
+            stems: "stems/PaperBoats.zip",
+            tempo: 148,
+            structure: [
+                { name: "Intro", bars: 4, timeSignature: "4/4" },
+                { name: "Verse 1", bars: 13, timeSignature: "4/4" },
+                { name: "Chorus", bars: 8, timeSignature: "4/4" },
+                { name: "Guitar Solo", bars: 4, timeSignature: "4/4" },
+                { name: "Verse 2", bars: 9, timeSignature: "4/4" },
+                { name: "Verse 3", bars: 9, timeSignature: "4/4" },
+                { name: "Guitar Solo", bars: 4, timeSignature: "4/4" },
+                { name: "Verse 4", bars: 8, timeSignature: "4/4" },
+                { name: "Chorus", bars: 13, timeSignature: "4/4" },
+                { name: "Guitar 1 Solo", bars: 32, timeSignature: "4/4" },
+                { name: "Guitar 2 Solo", bars: 11, timeSignature: "4/4" },
+                { name: "Chorus", bars: 9, timeSignature: "4/4" },
+                { name: "Outro", bars: 32, timeSignature: "4/4" }
+            ],
             lyrics: "Verse 1\n" +
                 "Backyard creek in the summertime glow,\n" +
                 "Barefoot banks where the wild grass grows.\n" +
@@ -103,6 +161,9 @@ window.songConfig = {
             title: "Dust On The Vinyl",
             file: "music/DustOnTheVinyl.mp3",
             duration: "4:15",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "In the attic light where the boxes lean,\n" +
                 "I found the records you kept so clean.\n" +
@@ -151,6 +212,9 @@ window.songConfig = {
             title: "Shadow Carousel",
             file: "music/ShadowCarousel.mp3",
             duration: "4:09",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Pre-Chorus\n" +
                 "Lights keep flashing but they never stay,\n" +
                 "Every joy feels one spin away.\n" +
@@ -198,6 +262,77 @@ window.songConfig = {
             title: "Songs In The Sidewalk",
             file: "music/SongsInTheSidewalk.mp3",
             duration: "4:18",
+            stems: "stems/SongsInTheSidewalk.zip",
+            tempo: 94,
+            structure: [
+                {
+                    name: "Intro",
+                    bars: [
+                        { count: 2, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                { name: "Verse 1", bars: 12, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 6, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                {
+                    name: "Ins Break",
+                    bars: [
+                        { count: 2, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                { name: "Verse 2", bars: 12, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 6, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                {
+                    name: "Ins Break",
+                    bars: [
+                        { count: 2, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                {
+                    name: "Solo",
+                    bars: [
+                        { count: 10, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                { name: "Verse 3", bars: 12, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 6, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                {
+                    name: "Ins Break",
+                    bars: [
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                { name: "Outro", bars: 12, timeSignature: "4/4" }
+            ],
             lyrics: "Verse 1 \n" +
                 "Morning light paints the cracks in gold,\n" +
                 "Stories written where the pavement folds. \n" +
@@ -250,6 +385,9 @@ window.songConfig = {
             title: "Rest Stops",
             file: "music/RestStops.mp3",
             duration: "3:52",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Mile markers blur, the road runs long,\n" +
                 "Radio fades to a half-sung song.\n" +
@@ -308,6 +446,62 @@ window.songConfig = {
             title: "Wildflower Roads",
             file: "music/WildflowerRoads.mp3",
             duration: "3:41",
+            stems: "stems/WildflowerRoads.zip",
+            tempo: 94,
+            structure: [
+                { name: "Intro", bars: 2, timeSignature: "4/4" },
+                {
+                    name: "Verse 1",
+                    bars: [
+                        { count: 3, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "5/4" },
+                        { count: 3, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 2, timeSignature: "4/4" }
+                    ]
+                },
+                { name: "Pre-Chorus", bars: 6, timeSignature: "4/4" },
+                {
+                    name: "Chorus",
+                    bars: [
+                        { count: 6, timeSignature: "4/4" },
+                        { count: 2, timeSignature: "3/4" }
+                    ]
+                },
+                { name: "Ins Break", bars: 2, timeSignature: "4/4" },
+                {
+                    name: "Verse 2",
+                    bars: [
+                        { count: 1, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" },
+                        { count: 3, timeSignature: "4/4" }
+                    ]
+                },
+                {
+                    name: "Pre-Chorus",
+                    bars: [
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "4/4" },
+                        { count: 3, timeSignature: "2/4" },
+                        { count: 1, timeSignature: "5/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "5/4" }
+                    ]
+                },
+                { name: "Chorus", bars: 8, timeSignature: "4/4" },
+                { name: "Keyboard Solo", bars: 12, timeSignature: "4/4" },
+                {
+                    name: "Verse 3",
+                    bars: [
+                        { count: 5, timeSignature: "4/4" },
+                        { count: 1, timeSignature: "3/4" },
+                        { count: 1, timeSignature: "4/4" }
+                    ]
+                },
+                { name: "Chorus", bars: 8, timeSignature: "4/4" },
+                { name: "Chorus", bars: 9, timeSignature: "4/4" }
+            ],
             lyrics: "Verse 1\n" +
                 "I took the turn where the pavement ends,\n" +
                 "Gravel songs became my friends.\n" +
@@ -365,12 +559,30 @@ window.songConfig = {
             title: "Whispers (the jam)",
             file: "music/Whispers.mp3",
             duration: "3:49",
-            lyrics: null
+            lyrics: null,
+            stems: "stems/Whispers.zip",
+            tempo: 92,
+            structure: [
+                { name: "Intro", bars: 4, timeSignature: "4/4" },
+                { name: "Guitar 1 Solo A", bars: 8, timeSignature: "4/4" },
+                { name: "Guitar 1 Solo B", bars: 12, timeSignature: "4/4" },
+                { name: "Interlude", bars: 4, timeSignature: "4/4" },
+                { name: "Guitar 1 Solo B", bars: 12, timeSignature: "4/4" },
+                { name: "Interlude", bars: 4, timeSignature: "4/4" },
+                { name: "Guitar 2 Solo", bars: 16, timeSignature: "4/4" },
+                { name: "Interlude", bars: 4, timeSignature: "4/4" },
+                { name: "Guitar 1 Solo B", bars: 12, timeSignature: "4/4" },
+                { name: "Interlude", bars: 4, timeSignature: "4/4" },
+                { name: "Outro", bars: 8, timeSignature: "4/4" }
+            ],
         },
         {
             title: "Page Seventeen",
             file: "music/PageSeventeen.mp3",
             duration: "5:06",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1 \n" +
                 "Dust writes cursive on a mailbox name,\n" +
                 "Soybeans bow like a Sunday prayer.\n" +
@@ -419,6 +631,9 @@ window.songConfig = {
             title: "Static Seasons",
             file: "music/StaticSeasons.mp3",
             duration: "2:11",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Snow on the lamppost, same as last year,\n" +
                 "Calendar turns, but it feels like we’re still here.\n" +
@@ -459,6 +674,9 @@ window.songConfig = {
             title: "Lantern Hearts",
             file: "music/LanternHearts.mp3",
             duration: "4:38",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "The night gets heavy, shadows close in,\n" +
                 "But I see the glow where the light begins.\n" +
@@ -507,6 +725,9 @@ window.songConfig = {
             title: "My Morning Song",
             file: "music/MyMorningSong.mp3",
             duration: "3:41",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Sun through the blinds writes gold on the floor,\n" +
                 "Kettle starts humming like a promise at the door.\n" +
@@ -563,6 +784,9 @@ window.songConfig = {
             title: "Backyard Conductor",
             file: "music/BackyardConductor.mp3",
             duration: "4:12",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Screen door sighs, summer air in my hands,\n" +
                 "Bare feet tapping soft dust into plans.\n" +
@@ -621,6 +845,9 @@ window.songConfig = {
             title: "Shake-Up Smile",
             file: "music/ShakeUpSmile.mp3",
             duration: "5:35",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "State fair sun and a wristband tan,\n" +
                 "Midway dust on my shoes and hands.\n" +
@@ -683,6 +910,9 @@ window.songConfig = {
             title: "Loving Forever 70s",
             file: "music/LivingForever70s.mp3",
             duration: "4:29",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Chorus\n" +
                 "We’re riding on a seventies jam,\n" +
                 "Lost in the moment, no one gives a damn.\n" +
@@ -711,6 +941,9 @@ window.songConfig = {
             title: "Porch Swing Two-Step",
             file: "music/PorchSwingTwoStep.mp3",
             duration: "2:44",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Friday night screen door sighs in time,\n" +
                 "July breeze on a clothesline rhyme.\n" +
@@ -753,6 +986,9 @@ window.songConfig = {
             title: "Cache Of Us",
             file: "music/CacheOfUs.mp3",
             duration: "4:30",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Closet light, midnight hush,\n" +
                 "Cardboard box behind the brush.\n" +
@@ -821,6 +1057,9 @@ window.songConfig = {
             title: "Little Nashville, Sing Me Home",
             file: "music/LittleNashville.mp3",
             duration: "4:46",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Two-lane 46 in an autumn haze,\n" +
                 "Maples setting every hillside blaze.\n" +
@@ -894,6 +1133,9 @@ window.songConfig = {
             title: "Split Rail Summer",
             file: "music/SplitRailSummer.mp3",
             duration: "3:51",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Sun on the pasture, dust in our lungs,\n" +
                 "Arms out wide like wings we’d hung.\n" +
@@ -958,6 +1200,9 @@ window.songConfig = {
             title: "Saturday Sneakers",
             file: "music/SaturdaySneakers.mp3",
             duration: "5:17",
+            stems: null,
+            tempo: null,
+            structure: null,
             lyrics: "Verse 1\n" +
                 "Alarm off, blinds up, blue on the street,\n" +
                 "Toast pops gold, I’m light on my feet.\n" +
